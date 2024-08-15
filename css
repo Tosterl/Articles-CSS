@@ -1,0 +1,143 @@
+         :root {
+            --background-color: #6d6c6e;
+            --header-background: rgba(51, 51, 51, 0.8);
+            --footer-background: rgba(51, 51, 51, 0.8);
+            --white: #fff;
+            --box-shadow-color: hsla(30, 100%, 50%, 1);
+            --cta-background: transparent;
+            --cta-hover-background: #0056b3;
+            --cta-border-color: ghostwhite;
+          }
+          body {
+            color: var(--white);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: var(--background-color);
+          }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure it's behind the content */
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(45%2c 41%2c 41%2c 1)'%3e%3c/rect%3e%3cg transform='translate(0%2c 0)' stroke-linecap='round' stroke='url(%26quot%3b%23SvgjsRadialGradient1003%26quot%3b)'%3e%3cpath d='M150 255.09 L150 304.9' stroke-width='15'%3e%3c/path%3e%3cpath d='M170 131.96 L170 428.04' stroke-width='15'%3e%3c/path%3e%3cpath d='M190 114.42 L190 445.58' stroke-width='15'%3e%3c/path%3e%3cpath d='M210 114.44 L210 445.56' stroke-width='15'%3e%3c/path%3e%3cpath d='M230 213.51 L230 346.49' stroke-width='15'%3e%3c/path%3e%3cpath d='M250 226.82 L250 333.18' stroke-width='15'%3e%3c/path%3e%3cpath d='M270 242.19 L270 317.81' stroke-width='15'%3e%3c/path%3e%3cpath d='M290 132.03 L290 427.97' stroke-width='15'%3e%3c/path%3e%3cpath d='M310 75.97 L310 484.03' stroke-width='15'%3e%3c/path%3e%3cpath d='M330 140.17 L330 419.83' stroke-width='15'%3e%3c/path%3e%3cpath d='M350 79.03 L350 480.97' stroke-width='15'%3e%3c/path%3e%3cpath d='M370 238.71 L370 321.29' stroke-width='15'%3e%3c/path%3e%3cpath d='M390 63.29 L390 496.71' stroke-width='15'%3e%3c/path%3e%3cpath d='M410 124.6 L410 435.4' stroke-width='15'%3e%3c/path%3e%3cpath d='M430 104.31 L430 455.69' stroke-width='15'%3e%3c/path%3e%3cpath d='M450 197.12 L450 362.88' stroke-width='15'%3e%3c/path%3e%3cpath d='M470 240.84 L470 319.16' stroke-width='15'%3e%3c/path%3e%3cpath d='M490 70.62 L490 489.38' stroke-width='15'%3e%3c/path%3e%3cpath d='M510 197.34 L510 362.66' stroke-width='15'%3e%3c/path%3e%3cpath d='M530 185.75 L530 374.25' stroke-width='15'%3e%3c/path%3e%3cpath d='M550 233.06 L550 326.94' stroke-width='15'%3e%3c/path%3e%3cpath d='M570 97.81 L570 462.19' stroke-width='15'%3e%3c/path%3e%3cpath d='M590 95.45 L590 464.55' stroke-width='15'%3e%3c/path%3e%3cpath d='M610 96.88 L610 463.12' stroke-width='15'%3e%3c/path%3e%3cpath d='M630 177.42 L630 382.58' stroke-width='15'%3e%3c/path%3e%3cpath d='M650 105.92 L650 454.08' stroke-width='15'%3e%3c/path%3e%3cpath d='M670 186.93 L670 373.07' stroke-width='15'%3e%3c/path%3e%3cpath d='M690 256.46 L690 303.54' stroke-width='15'%3e%3c/path%3e%3cpath d='M710 93.61 L710 466.39' stroke-width='15'%3e%3c/path%3e%3cpath d='M730 110.04 L730 449.96' stroke-width='15'%3e%3c/path%3e%3cpath d='M750 196.95 L750 363.05' stroke-width='15'%3e%3c/path%3e%3cpath d='M770 178.28 L770 381.72' stroke-width='15'%3e%3c/path%3e%3cpath d='M790 218.09 L790 341.92' stroke-width='15'%3e%3c/path%3e%3cpath d='M810 74.78 L810 485.22' stroke-width='15'%3e%3c/path%3e%3cpath d='M830 83.28 L830 476.73' stroke-width='15'%3e%3c/path%3e%3cpath d='M850 183.53 L850 376.48' stroke-width='15'%3e%3c/path%3e%3cpath d='M870 249.84 L870 310.17' stroke-width='15'%3e%3c/path%3e%3cpath d='M890 123.81 L890 436.19' stroke-width='15'%3e%3c/path%3e%3cpath d='M910 183.99 L910 376.01' stroke-width='15'%3e%3c/path%3e%3cpath d='M930 66.54 L930 493.46' stroke-width='15'%3e%3c/path%3e%3cpath d='M950 236.62 L950 323.38' stroke-width='15'%3e%3c/path%3e%3cpath d='M970 109.81 L970 450.19' stroke-width='15'%3e%3c/path%3e%3cpath d='M990 133.38 L990 426.63' stroke-width='15'%3e%3c/path%3e%3cpath d='M1010 208.34 L1010 351.65' stroke-width='15'%3e%3c/path%3e%3cpath d='M1030 218.09 L1030 341.91' stroke-width='15'%3e%3c/path%3e%3cpath d='M1050 248.28 L1050 311.71' stroke-width='15'%3e%3c/path%3e%3cpath d='M1070 191.13 L1070 368.87' stroke-width='15'%3e%3c/path%3e%3cpath d='M1090 141.13 L1090 418.88' stroke-width='15'%3e%3c/path%3e%3cpath d='M1110 249.12 L1110 310.88' stroke-width='15'%3e%3c/path%3e%3cpath d='M1130 84.91 L1130 475.09' stroke-width='15'%3e%3c/path%3e%3cpath d='M1150 211.07 L1150 348.93' stroke-width='15'%3e%3c/path%3e%3cpath d='M1170 246.77 L1170 313.23' stroke-width='15'%3e%3c/path%3e%3cpath d='M1190 158.69 L1190 401.31' stroke-width='15'%3e%3c/path%3e%3cpath d='M1210 218.26 L1210 341.74' stroke-width='15'%3e%3c/path%3e%3cpath d='M1230 113.88 L1230 446.12' stroke-width='15'%3e%3c/path%3e%3cpath d='M1250 187.94 L1250 372.06' stroke-width='15'%3e%3c/path%3e%3cpath d='M1270 185.73 L1270 374.27' stroke-width='15'%3e%3c/path%3e%3cpath d='M1290 180.03 L1290 379.97' stroke-width='15'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='720' cy='280' r='625.75' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1003'%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0.25'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 124%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e");    background-repeat: repeat-y;
+            background-size: contain;
+            background-position: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+        }
+    .main-content {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(5px)
+}
+.main-title, .intro-paragraph, .closing-paragraph {
+    color: ghostwhite; /* To ensure text is visible against */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+    section{
+      color: ghostwhite;
+      margin-bottom: 20px;
+      padding: 10px 0;
+    }
+    
+h1 {
+    font-size: 2rem; /* Base font size for mobile */
+    margin-bottom: 20px;
+}
+h2 {
+  font-size: 1.75rem;
+  padding: 10px 0; /* 10px top and bottom padding, 0 left and right */
+  margin-bottom: 30px; /* Increased bottom margin to create space */
+}
+
+p {
+  margin-top: 20px; /* Add top margin to ensure space from h2 */
+  margin-bottom: 20px; /* 20px bottom margin */
+}
+    }
+    ul, ol {
+      /* Styles for lists */
+      padding-left: 40px; /* 20px padding on the left */
+      margin-bottom: 15px; /* 15px bottom margin */
+    }
+    section {
+  color: ghostwhite;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+   section h2 {
+  padding: 10px 0;
+  margin-bottom: 20px; /* Ensure space below the header */
+} 
+section p {
+  margin-top: 10px; /* Add space above the paragraph to separate it from the h2 */
+  margin-bottom: 20px;
+}
+.main-title {
+    font-size: 2.5rem; /* Base font size for mobile */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.closing-paragraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--cta-background);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--cta-border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--cta-hover-background);
+    border-color: var(--cta-hover-background);
+}
+
+section a {
+    color: ghostwhite;
+    text-decoration: underline;
+}
+
+section a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+/* Tablet Screens */
+@media (min-width: 600px) {
+    .main-content {
+        padding: 30px;
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Larger font size for tablets */
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .cta-button {
+        padding: 15px 30px;
+    }
+}
